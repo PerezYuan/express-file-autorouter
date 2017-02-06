@@ -7,3 +7,5 @@ var autoRouter = new AutoRouter({
     app: app, //express app
     alias: {}
 });
+
+//console.log(Object.keys(autoRouter.getRouters()));
