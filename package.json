@@ -1,0 +1,19 @@
+{
+  "name": "express-file-autorouter",
+  "version": "1.0.0",
+  "description": "an express auto-router through reading files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "auto",
+    "auto-router"
+  ],
+  "author": "Perez Yuan",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}

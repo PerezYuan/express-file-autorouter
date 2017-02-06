@@ -1,0 +1,7 @@
+/node_modules
+/npm-debug.log
+node_modules/**
+.idea/**
+.vscode/**
+/conf/qiniu-config.js
+/temp/**
