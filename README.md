@@ -1,4 +1,4 @@
-# An express auto-router through reading files #
+# An express auto-router through reading name of file #
 
 # Installation #
 
