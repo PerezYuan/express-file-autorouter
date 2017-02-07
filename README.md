@@ -25,6 +25,9 @@ In `app.js`:
 
 ```
 var AutoRouter = require('express-file-autorouter');
+var path = require('path');
+var app = require('express')();
+
 var autoRouter = new AutoRouter({
     routerPath: path.resolve(__dirname, 'routerPath'), //routers path
     app: app, //express app
