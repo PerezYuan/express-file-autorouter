@@ -1,6 +1,6 @@
 {
   "name": "express-file-autorouter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An express auto-router through reading name of file",
   "main": "index.js",
   "scripts": {
