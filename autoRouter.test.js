@@ -3,8 +3,8 @@ var path = require('path');
 var app = require('express')();
 
 var autoRouter = new AutoRouter({
-    routerPath: path.resolve(__dirname, 'routerPath'), //存放路由的path
-    app: app, //express app
+    routerPath: path.resolve(__dirname, 'routerPath'),
+    app: app,
     alias: {
         '/router1' : '/change1'
     }
