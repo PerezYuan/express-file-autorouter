@@ -6,7 +6,7 @@ var autoRouter = new AutoRouter({
     routerPath: path.resolve(__dirname, 'routerPath'),
     app: app,
     alias: {
-        '/router1' : '/change1'
+        '/routerDir/router5' : '/change5'
     }
 });
 
