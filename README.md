@@ -8,7 +8,7 @@ npm install --save express-file-autorouter
 ```
 
 # Usage #
-If your directory to save routes like this:
+If your directory of saving routes like this:
 ```
 project
 │
@@ -19,9 +19,10 @@ project
     │
     └─ routerDir
          router4.js
+         router5.js
 ```
 
-In `app.js`:
+In `app.js` or routes init file:
 
 ```
 var AutoRouter = require('express-file-autorouter');
@@ -29,20 +30,23 @@ var path = require('path');
 var app = require('express')();
 
 var autoRouter = new AutoRouter({
-    routerPath: path.resolve(__dirname, 'routerPath'), //routers path
-    app: app, //express app
+    routerPath: path.resolve(__dirname, 'routerPath'),
+    app: app,
     alias: {
-        '/router1' : '/change1'
+        '/routerDir/router5' : '/change5'
     }
 });
+
+console.log(Object.keys(autoRouter.getRouters()));
 ```
 
 Now `express-file-autorouter` will create the following routes:
 ```
 [
-	'/change1',   //alias: router1 => change1
+	'/router1',   //alias: router1 => change1
 	'/router2',      
 	'/router3',
-	'/router4',
+	'/routerDir/router4',
+	'/change5'
 ]
 ```
