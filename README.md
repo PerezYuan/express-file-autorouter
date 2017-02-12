@@ -43,10 +43,10 @@ console.log(Object.keys(autoRouter.getRouters()));
 Now `express-file-autorouter` will create the following routes:
 ```
 [
-	'/router1',   //alias: router1 => change1
+	'/router1',
 	'/router2',      
 	'/router3',
 	'/routerDir/router4',
-	'/change5'
+	'/change5'   //alias: /routerDir/router5 => change5
 ]
 ```
